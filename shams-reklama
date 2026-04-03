@@ -1,0 +1,211 @@
+```html
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAMS REKLAMA | Tashqi Reklama Xizmatlari</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #080808; color: #ffffff; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px); }
+        .shams-gradient { background: linear-gradient(to bottom, #fbbf24, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .ai-btn { background: #fbbf24; box-shadow: 0 0 15px rgba(251, 191, 36, 0.3); transition: all 0.2s ease; }
+        input, textarea { background: rgba(255, 255, 255, 0.03) !important; border: 1px solid rgba(255, 255, 255, 0.1) !important; }
+        input:focus, textarea:focus { border-color: #fbbf24 !important; }
+        /* Raqamlar sig'ishi uchun maxsus klass */
+        .phone-link { font-size: clamp(1.4rem, 6vw, 2.5rem); line-height: 1.2; white-space: nowrap; letter-spacing: -0.02em; }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="p-4 border-b border-white/5 sticky top-0 bg-black/90 backdrop-blur-md z-50">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center text-black font-black text-xl shadow-lg">S</div>
+                <div>
+                    <h1 class="font-black text-lg tracking-tighter uppercase italic leading-none">SHAMS REKLAMA</h1>
+                    <p class="text-[8px] tracking-[0.4em] text-yellow-500 font-bold uppercase mt-1 italic">Tashqi Reklama</p>
+                </div>
+            </div>
+            <button onclick="showPage('advisor')" class="ai-btn text-black text-[9px] font-black px-5 py-2.5 rounded-full flex items-center gap-2 uppercase tracking-widest">
+                <i class="fas fa-robot"></i> BREND AI
+            </button>
+        </div>
+    </header>
+
+    <div id="home-page">
+        <main class="max-w-4xl mx-auto px-6 py-12 space-y-16">
+            
+            <!-- HERO -->
+            <section class="text-center space-y-4">
+                <h2 class="text-5xl md:text-8xl font-black tracking-tighter uppercase leading-none">
+                    SHAMS <span class="shams-gradient italic">REKLAMA</span>
+                </h2>
+                <p class="text-gray-400 text-sm md:text-base font-medium max-w-md mx-auto uppercase tracking-widest">Sifatli tashqi reklama xizmatlari.</p>
+            </section>
+
+            <!-- BUYURTMA FORMASI -->
+            <section class="glass p-8 rounded-3xl border border-yellow-500/10 shadow-xl">
+                <h3 class="text-xl font-extrabold mb-8 flex items-center gap-3 uppercase italic text-yellow-500">
+                    <span class="w-1.5 h-6 bg-yellow-500 rounded-full"></span>
+                    Onlayn Buyurtma
+                </h3>
+                <form id="orderForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold text-gray-500 uppercase ml-2 tracking-widest">Ismingiz</label>
+                            <input name="name" required placeholder="Masalan: Farruh" class="w-full p-4 rounded-xl outline-none text-sm text-white" />
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold text-gray-500 uppercase ml-2 tracking-widest">Telefon raqamingiz</label>
+                            <input name="phone" id="phoneInput" required type="tel" value="+998" class="w-full p-4 rounded-xl outline-none text-sm font-bold text-yellow-500" />
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-[10px] font-bold text-gray-500 uppercase ml-2 tracking-widest">Nima buyurtma bermoqchisiz?</label>
+                        <textarea name="order" required rows="3" placeholder="Masalan: Banner, Vizitka, Reklama doskasi..." class="w-full p-4 rounded-xl outline-none text-sm resize-none text-white"></textarea>
+                    </div>
+                    <button type="submit" id="submitBtn" class="w-full bg-yellow-500 text-black font-black py-4 rounded-xl text-sm uppercase tracking-widest hover:bg-yellow-400 transition-all shadow-lg shadow-yellow-500/10">
+                        BUYURTMANI YUBORISH
+                    </button>
+                </form>
+            </section>
+
+            <!-- KONTAKTLAR -->
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
+                <div class="glass p-6 rounded-2xl border-yellow-500/20 bg-yellow-500/5">
+                    <p class="text-[10px] font-black uppercase tracking-[0.3em] mb-3 text-yellow-500">1. SHAMS REKLAMA (ASOSIY)</p>
+                    <a href="tel:+998950772254" class="phone-link font-black block hover:text-yellow-500 transition-colors">+998 95 077 22 54</a>
+                    <a href="https://t.me/shamsreklama" target="_blank" class="text-xs font-bold text-gray-500 mt-2 block italic hover:text-white transition-colors">@shamsreklama</a>
+                </div>
+                <div class="glass p-6 rounded-2xl border-white/5">
+                    <p class="text-[10px] font-black uppercase tracking-[0.3em] mb-3 text-yellow-500">2. SHAMS X/K</p>
+                    <a href="tel:+998979962254" class="phone-link font-black block hover:text-yellow-500 transition-colors">+998 97 996 22 54</a>
+                    <a href="https://t.me/shams2254" target="_blank" class="text-xs font-bold text-gray-500 mt-2 block italic hover:text-white transition-colors">@shams2254</a>
+                </div>
+                <div class="glass p-6 rounded-2xl border-white/5">
+                    <p class="text-[10px] font-black uppercase tracking-[0.3em] mb-3 text-yellow-500">3. SHAMS 1</p>
+                    <a href="tel:+998902212685" class="phone-link font-black block hover:text-yellow-500 transition-colors">+998 90 221 26 85</a>
+                    <a href="https://t.me/shams2685" target="_blank" class="text-xs font-bold text-gray-500 mt-2 block italic hover:text-white transition-colors">@shams2685</a>
+                </div>
+                <div class="glass p-6 rounded-2xl border-white/5">
+                    <p class="text-[10px] font-black uppercase tracking-[0.3em] mb-3 text-yellow-500">4. SHAMS 3</p>
+                    <a href="tel:+998958622254" class="phone-link font-black block hover:text-yellow-500 transition-colors">+998 95 862 22 54</a>
+                    <a href="https://t.me/shams3_copy" target="_blank" class="text-xs font-bold text-gray-500 mt-2 block italic hover:text-white transition-colors">@shams3_copy</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER (CREATOR) -->
+        <footer class="mt-20 border-t border-white/5 py-12 text-center bg-black/50">
+            <div class="space-y-2">
+                <p class="text-gray-700 text-[8px] tracking-[0.6em] uppercase font-bold">Official Site 2024</p>
+                <div class="px-6">
+                    <span class="text-gray-500 font-bold text-[9px] uppercase tracking-[0.2em] block">Created by</span>
+                    <span class="shams-gradient font-black text-2xl uppercase tracking-widest italic">Farruh Mirzabahromov</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- AI ADVISOR -->
+    <div id="advisor-page" class="hidden min-h-screen flex flex-col bg-[#050505]">
+        <nav class="p-4 border-b border-white/10 flex justify-between items-center glass sticky top-0 z-50">
+            <button onclick="showPage('home')" class="text-gray-500 font-black text-[9px] tracking-widest uppercase hover:text-white transition-colors"><i class="fas fa-arrow-left mr-2"></i> ORQAGA</button>
+            <span class="text-yellow-500 font-black text-[10px] tracking-[0.3em] uppercase italic">SHAMS AI ADVISOR</span>
+            <div class="w-10"></div>
+        </nav>
+        <div id="chat-box" class="flex-1 overflow-y-auto p-6 space-y-6 max-w-3xl mx-auto w-full">
+            <div class="flex justify-start">
+                <div class="glass max-w-[85%] p-5 rounded-2xl rounded-tl-none text-sm border-l-4 border-yellow-500 shadow-xl leading-relaxed italic">
+                    Assalomu alaykum! Men **SHAMS AI** maslahatchisiman. Tashqi reklama bo'yicha qanday g'oyangiz bor?
+                </div>
+            </div>
+        </div>
+        <div class="p-4 glass border-t border-white/10">
+            <div class="max-w-3xl mx-auto flex gap-3">
+                <input id="aiInput" type="text" placeholder="Xabar yozing..." class="flex-1 bg-white/5 p-4 rounded-xl outline-none text-sm border border-white/10 focus:border-yellow-500 font-medium text-white">
+                <button onclick="handleAIChat()" class="bg-yellow-500 text-black px-6 rounded-xl font-black text-[10px] uppercase tracking-widest shadow-xl active:scale-95 transition-all">YUBORISH</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const apiKey = "AIzaSyBWIhvwn6CBjjNTfcXolNjy_Gysv2q37N8"; 
+        const botToken = "8636596611:AAG7MYkb1gmFOVBfQ_3E2Oc__yhppjQt1tY";
+        const chatId = "5631460591";
+
+        function showPage(page) {
+            document.getElementById('home-page').classList.toggle('hidden', page !== 'home');
+            document.getElementById('advisor-page').classList.toggle('hidden', page !== 'advisor');
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        const phoneInput = document.getElementById('phoneInput');
+        phoneInput.addEventListener('input', (e) => {
+            if (!e.target.value.startsWith('+998')) e.target.value = '+998';
+        });
+
+        document.getElementById('orderForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            const oldTxt = btn.innerText;
+            btn.innerText = "YUBORILMOQDA...";
+            btn.disabled = true;
+
+            const fd = new FormData(e.target);
+            const msg = `🎯 YANGI BUYURTMA!\n\n👤 Mijoz: ${fd.get('name')}\n📞 Tel: ${fd.get('phone')}\n📝 Buyurtma: ${fd.get('order')}`;
+
+            try {
+                const res = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ chat_id: chatId, text: msg })
+                });
+                if(res.ok) {
+                    alert("✅ Rahmat! Buyurtmangiz qabul qilindi.");
+                    e.target.reset();
+                    phoneInput.value = '+998';
+                } else { alert("Botga /start bosing!"); }
+            } catch { alert("Tarmoq xatosi!"); }
+            finally { btn.innerText = oldTxt; btn.disabled = false; }
+        });
+
+        async function handleAIChat() {
+            const input = document.getElementById('aiInput');
+            const chat = document.getElementById('chat-box');
+            if(!input.value.trim()) return;
+
+            const val = input.value;
+            input.value = '';
+            chat.innerHTML += `<div class="flex justify-end"><div class="bg-yellow-500 text-black p-4 rounded-2xl rounded-tr-none text-sm font-bold shadow-md">${val}</div></div>`;
+            chat.scrollTop = chat.scrollHeight;
+
+            const id = 'gen' + Date.now();
+            chat.innerHTML += `<div class="flex justify-start"><div id="${id}" class="glass p-5 rounded-2xl rounded-tl-none text-sm border border-white/10 animate-pulse italic text-white">O'ylayapman...</div></div>`;
+            chat.scrollTop = chat.scrollHeight;
+
+            try {
+                const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: "Siz Shams Reklama (Tashqi reklama xizmati) xodimisiz. Mijozga juda qisqa va samimiy javob bering: " + val }] }]
+                    })
+                });
+                const d = await r.json();
+                const el = document.getElementById(id);
+                el.innerText = d.candidates[0].content.parts[0].text;
+                el.classList.remove('animate-pulse', 'italic');
+            } catch { document.getElementById(id).innerText = "Hozircha javob bera olmayman."; }
+            chat.scrollTop = chat.scrollHeight;
+        }
+    </script>
+</body>
+</html>
+
+```
